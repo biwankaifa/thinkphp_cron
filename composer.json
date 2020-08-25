@@ -1,0 +1,31 @@
+{
+    "name": "biwankaifa/thinkphp_cron",
+    "description": "定时任务",
+    "authors": [
+        {
+            "name": "过骏",
+            "email": "guojun@joymaking.com"
+        }
+    ],
+    "require": {
+        "topthink/framework": "^6.0",
+        "mtdowling/cron-expression": "^1.2",
+        "symfony/process": "^4.4",
+        "nesbot/carbon": "^2.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "biwankaifa\\cron\\": "src/cron"
+        }
+    },
+    "extra": {
+        "think": {
+            "config": {
+                "cron": "src/config.php"
+            },
+            "services": [
+                "biwankaifa\\cron\\Service"
+            ]
+        }
+    }
+}
